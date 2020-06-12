@@ -35878,7 +35878,7 @@ return new T.ey(C.N,t,t,L.f5("Contact page",t,t),t)}}
 X.jO.prototype={
 aF:function(){return new X.yK(C.n)}}
 X.yK.prototype={
-J:function(a){var t,s=null,r=S.rc(s,s,s,s,s,new X.rO(new L.lM("images/landing_page.jpg"),new H.tb(C.k,C.jx),C.mw),C.Q),q=F.cB(a,!1).a,p=F.cB(a,!1).a,o=F.cB(a,!1).a,n=P.d1(0,150),m=H.b(["Hello, nice to meet you!","My name is Rosca Vlad","I'm a full-stack software developer","Come and meet me!"],u.s),l=A.ky(s,s,C.iu,s,s,s,s,s,"Agne",s,s,30,s,s,s,s,!0,s,s,s,s,s,s)
+J:function(a){var t,s=null,r=S.rc(s,s,s,s,s,new X.rO(new L.lM("assets/images/landing_page.jpg"),new H.tb(C.k,C.jx),C.mw),C.Q),q=F.cB(a,!1).a,p=F.cB(a,!1).a,o=F.cB(a,!1).a,n=P.d1(0,150),m=H.b(["Hello, nice to meet you!","My name is Rosca Vlad","I'm a full-stack software developer","Come and meet me!"],u.s),l=A.ky(s,s,C.iu,s,s,s,s,s,"Agne",s,s,30,s,s,s,s,!0,s,s,s,s,s,s)
 if(this.d){t=new P.aR(5,5)
 t=new D.vk(new X.LH(),s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,L.f5("See my work",s,s),s,s,new X.bG(new Y.et(C.iu,1,C.F),new K.b8(t,t,t,t)),C.aJ,s,!1,s,s,s)}else t=M.hN(s,s,s,s,s,s,s,s,s)
 return M.hN(s,new T.ey(C.N,s,s,T.SV(H.b([new T.iA(o.a/5,s,new M.oW(m,l,n,new X.LI(),new X.LJ(this),C.aE,!1,s),s),t],u.p),C.mV,C.nL),s),s,s,r,p.b,s,s,q.a)},
