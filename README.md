@@ -1,2 +1,0 @@
-# vladrosca
-Personal portfolio
