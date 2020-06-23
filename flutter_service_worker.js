@@ -3,21 +3,23 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "6271ecf3585a1712ba42e24fc77d21a6",
+  "assets/AssetManifest.json": "578ca204b29e5ae6c5db27993bec2cb9",
 "assets/assets/images/landing_page.jpg": "2c17383f6ab072fb79d0e5a1afd5a6a4",
+"assets/assets/images/projects/covidInfo.png": "4b23845173d40fe21adb1f6b1a42e60b",
 "assets/assets/images/projects/medical-app.png": "ce7ff95f839c1a2310aac2aa1935dfba",
 "assets/assets/images/social_media/appStore.png": "c4d527a52e257ee7c20d0070ec9a5550",
+"assets/assets/images/social_media/github.png": "064ace4777ac86d7627f455f36975452",
 "assets/assets/images/social_media/googlePlay.png": "01a98fa6cd8914a0e1af07bc9622a721",
 "assets/FontManifest.json": "01700ba55b08a6141f33e168c4a6c22f",
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
-"assets/NOTICES": "8b6ecd1f0ae1c8e4278f6f10f7af9c6c",
+"assets/NOTICES": "9701a1af527970e31c29121f270e49af",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "index.html": "2def70cdfb9efbc99017bc85e0c5e804",
 "/": "2def70cdfb9efbc99017bc85e0c5e804",
-"main.dart.js": "381a29945582e4ca0d011ab55d511817",
+"main.dart.js": "b07442dcffdf8f5f383f73f1b812b214",
 "manifest.json": "5a2c0526f1fe73e6f211bc7a9d15c210"
 };
 
