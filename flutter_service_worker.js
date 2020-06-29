@@ -3,10 +3,12 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "578ca204b29e5ae6c5db27993bec2cb9",
+  "assets/AssetManifest.json": "4bd65a3139b74a65a3dc358c8a6000ea",
 "assets/assets/images/landing_page.jpg": "2c17383f6ab072fb79d0e5a1afd5a6a4",
 "assets/assets/images/projects/covidInfo.png": "4b23845173d40fe21adb1f6b1a42e60b",
+"assets/assets/images/projects/free_days.png": "8f7fd3b7ef743d8ca5c14f94dc569bed",
 "assets/assets/images/projects/medical-app.png": "ce7ff95f839c1a2310aac2aa1935dfba",
+"assets/assets/images/projects/portfolio.png": "5e1a98aa4beee80f5d13fdd5617b5871",
 "assets/assets/images/social_media/appStore.png": "c4d527a52e257ee7c20d0070ec9a5550",
 "assets/assets/images/social_media/github.png": "064ace4777ac86d7627f455f36975452",
 "assets/assets/images/social_media/googlePlay.png": "01a98fa6cd8914a0e1af07bc9622a721",
@@ -19,7 +21,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "index.html": "2def70cdfb9efbc99017bc85e0c5e804",
 "/": "2def70cdfb9efbc99017bc85e0c5e804",
-"main.dart.js": "b07442dcffdf8f5f383f73f1b812b214",
+"main.dart.js": "8834867dbdb658ee6f219ad7e18a223c",
 "manifest.json": "5a2c0526f1fe73e6f211bc7a9d15c210"
 };
 
