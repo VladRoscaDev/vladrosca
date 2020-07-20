@@ -7,7 +7,7 @@ const RESOURCES = {
 "assets/assets/images/landing_page.jpg": "2c17383f6ab072fb79d0e5a1afd5a6a4",
 "assets/assets/images/projects/covidInfo.png": "4b23845173d40fe21adb1f6b1a42e60b",
 "assets/assets/images/projects/free_days.png": "8f7fd3b7ef743d8ca5c14f94dc569bed",
-"assets/assets/images/projects/medical-app.png": "ce7ff95f839c1a2310aac2aa1935dfba",
+"assets/assets/images/projects/medical-app.png": "c718e3cd052a77909cbb448dc4e5a918",
 "assets/assets/images/projects/memocar.png": "3e1c4d62227d2499def2a78e497ca4d1",
 "assets/assets/images/projects/portfolio.png": "5e1a98aa4beee80f5d13fdd5617b5871",
 "assets/assets/images/social_media/appStore.png": "c4d527a52e257ee7c20d0070ec9a5550",
@@ -15,14 +15,14 @@ const RESOURCES = {
 "assets/assets/images/social_media/googlePlay.png": "01a98fa6cd8914a0e1af07bc9622a721",
 "assets/FontManifest.json": "01700ba55b08a6141f33e168c4a6c22f",
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
-"assets/NOTICES": "9701a1af527970e31c29121f270e49af",
+"assets/NOTICES": "2ad900da6ca0b060a3e416bd3f0c09a2",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "index.html": "2def70cdfb9efbc99017bc85e0c5e804",
 "/": "2def70cdfb9efbc99017bc85e0c5e804",
-"main.dart.js": "2fe48c16577db019f8c9895b72c982fc",
+"main.dart.js": "5e507703c907b3cdb91df8282afc416b",
 "manifest.json": "5a2c0526f1fe73e6f211bc7a9d15c210"
 };
 
@@ -32,7 +32,7 @@ const CORE = [
   "/",
 "main.dart.js",
 "index.html",
-"assets/LICENSE",
+"assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
 
@@ -114,7 +114,7 @@ self.addEventListener("fetch", (event) => {
   if (event.request.url == origin || event.request.url.startsWith(origin + '/#')) {
     key = '/';
   }
-  // If the URL is not the the RESOURCE list, skip the cache.
+  // If the URL is not the RESOURCE list, skip the cache.
   if (!RESOURCES[key]) {
     return event.respondWith(fetch(event.request));
   }
@@ -137,11 +137,11 @@ self.addEventListener("fetch", (event) => {
 self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
-  if (event.message == 'skipWaiting') {
+  if (event.data === 'skipWaiting') {
     return self.skipWaiting();
   }
 
-  if (event.message = 'downloadOffline') {
+  if (event.message === 'downloadOffline') {
     downloadOffline();
   }
 });
@@ -161,8 +161,8 @@ async function downloadOffline() {
   }
   for (var resourceKey in Object.keys(RESOURCES)) {
     if (!currentContent[resourceKey]) {
-      resources.add(resourceKey);
+      resources.push(resourceKey);
     }
   }
-  return Cache.addAll(resources);
+  return contentCache.addAll(resources);
 }
